@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalize Your Profile</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="personalize.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Personalize Your Profile</h1>
+    <form id="personalizeForm" onsubmit="saveProfile(); return false;">
+      <label for="diseases">Do you have any diseases?</label>
+      <select id="diseases" name="diseases">
+        <option value="">None</option>
+        <option value="diabetes">Diabetes</option>
+        <option value="hypertension">Hypertension</option>
+      </select>
+
+      <label for="allergies">Do you have any allergies?</label>
+      <select id="allergies" name="allergies">
+        <option value="">None</option>
+        <option value="peanuts">Peanuts</option>
+        <option value="lactose">Lactose Intolerance</option>
+      </select>
+
+      <label for="weight">Weight (kg)</label>
+      <input type="number" id="weight" name="weight" min="0">
+
+      <button type="submit">Save</button>
+    </form>
+  </div>
+  <script src="profile.js"></script>
+</body>
+</html>
